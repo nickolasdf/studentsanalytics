@@ -1,0 +1,43 @@
+#UserImg {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.userMenu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    cursor: pointer;
+}
+
+.userIcon {
+    width: 65px;
+    border-radius: 100%;
+}
+
+#userInfo {
+    background-color: white;
+}
+
+#userBlock:active {
+    outline: none;
+    background-color: white;
+    color: black;
+    border: none;
+}
+
+.userInfoSection {
+    cursor: text;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.field:active{
+    padding:0;
+    background-color: #e8ecef;
+}

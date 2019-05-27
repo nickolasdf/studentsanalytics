@@ -1,0 +1,169 @@
+#Editor {
+    background-color: transparent;
+    cursor: pointer;
+    border:none;
+}
+
+table {
+    display: block;
+    overflow-x: auto;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.table tr {
+    display: flex;
+}
+.table tr:hover td:not(#Editor){
+    background-image: linear-gradient(to bottom, #d5dae8, white) ;
+}
+.table th:first-child,
+.table td:first-child {
+    height: auto;
+    width: 50px;
+    text-align: center;
+}
+
+.table th {
+    background-color: #0d5b85;
+}
+
+.table td {
+    min-height: 100px;
+}
+
+.table th,
+.table td {
+    display: flex;
+
+    width: 300px;
+    text-align: left;
+
+    border-top: 3px solid white;
+    border-left: 3px solid white;
+    border-bottom: 3px solid white;
+
+    padding: 10px 15px;
+    position: relative;
+    transition: 0.3s;
+}
+
+.table th:last-child,
+.table td:last-child {
+    border-right: 3px solid white;
+}
+
+#sort {
+    width: 120px;
+    height: 50px;
+    text-align: left;
+    border: none;
+    font-weight: bold;
+    box-shadow: none;
+    background-color: transparent;
+    transition: 1s;
+}
+
+#sort:hover {
+    color: #d9d9d9;
+    transition: 0.3s;
+}
+
+#sort:focus {
+    color: black;
+}
+
+.EmptyTable {
+    text-align: center;
+    margin-top: 15vh;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #1d643b;
+}
+
+
+@media only screen and (max-width: 1130px) {
+    table {
+        display: flex;
+        flex-direction: row;
+        white-space: nowrap;
+        overflow-x: auto;
+
+    }
+
+    tbody {
+        display: flex;
+    }
+
+    tr {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        max-width: fit-content;
+        background-image: none;
+    }
+
+    .table td, .table th {
+        border: 2px solid white;
+        min-height: 65px;
+        width: auto;
+    }
+
+    .table th {
+        width: 150px;
+    }
+
+    .table tbody > tr {
+        display: flex;
+
+    }
+
+    .table tbody:hover td {
+        color: black;
+        text-shadow: none;
+    }
+
+    .table tbody:hover tr:hover td {
+        color: black;
+        text-shadow: none;
+    }
+
+    th:nth-child(2n) {
+        background-color: cornflowerblue;
+    }
+
+    #sort:focus {
+        background-color: transparent;
+    }
+
+    #sort {
+        width: 100%;
+        height: 40%;
+    }
+
+    /* width */
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: white;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: cornflowerblue;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #0d5b85;
+    }
+
+}
+
+
+
+

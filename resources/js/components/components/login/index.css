@@ -1,0 +1,99 @@
+
+.Window {
+    font-family: Roboto;
+    position: relative;
+    background-color: #e8ecef;
+    height: 100%;
+}
+
+.WindowBlurred {
+    font-family: Roboto;
+    position: relative;
+    background: rgba(000, 0, 0, 0.5);
+    height: 100%;
+}
+
+.WindowBlurred > *:not(.WindowWrapper) {
+    filter: blur(2px);
+}
+
+.Page {
+    position: relative;
+    display: flex;
+    height: auto;
+    width: 100%;
+}
+
+.SideBar {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+}
+
+.mainSection {
+    position: relative;
+    z-index: 0;
+    display: flex;
+    background-color: #e8ecef;
+    height: auto;
+}
+
+.currentSection {
+    height: auto;
+    display: flex;
+    width: 100vw;
+}
+
+.WindowWrapper {
+    top: 0;
+    height: 100%;
+    width: 100%;
+
+    position: absolute;
+    z-index: 3;
+
+}
+
+.myModal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+}
+
+
+.tableBlock {
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    margin-top: 90px;
+    height: 100vh;
+}
+
+@media only screen and (max-width: 800px) {
+    /*  .DiagramList {
+          height: 14vh;
+      }
+
+      .tableBlock {
+          margin-top: 14vh;
+      }
+  */
+    /* .mainSection{
+         border-width: 5px;
+         border-style: solid;
+         border-image: linear-gradient(to bottom, #256589, rgba(0, 0, 0, 0)) 1 100%;
+     }*/
+    .SideBar {
+        flex-direction: row;
+        width: 100%;
+        height: 150px;
+        position: fixed;
+    }
+
+    .Page {
+        flex-direction: column;
+    }
+}

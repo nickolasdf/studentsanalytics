@@ -1,0 +1,119 @@
+.headerMenu {
+    width: 100vw;
+    background-color: #0d5b85;
+    color: white;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    position: fixed;
+    z-index: 2;
+}
+
+.list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 5vw;
+    padding-left:2vw;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+
+#menu {
+    background-color: #0d5b85;
+    text-align: center;
+    margin-top: 25px;
+    margin-left: 40px;
+}
+
+
+#hamburger{
+    transition: 1s;
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+    font-size:42px;
+}
+
+#roll{
+    background: radial-gradient(ellipse at top, #2181b5, #408bb3),
+    radial-gradient(ellipse at bottom, transparent, #065078);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-left: 25px;
+    font-size:42px;
+    transition: 0.5s;
+    transform:  rotate(+360deg);
+    box-shadow: none;
+}
+#roll:hover,#hamburger:hover{
+    cursor: pointer;
+}
+
+.currentPage {
+    color: white;
+    font-size: 22px;
+}
+
+#dropDown {
+    background-color: transparent;
+}
+.fa-door-open{
+    font-size:20px;
+}
+
+.logOut {
+    margin-top: 5px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+.currentPage:hover{
+    cursor: text;
+}
+
+.userMenu:hover,
+.logOut:hover,
+#iosMenu:hover,
+#hamburger:hover{
+    color: #d9d9d9;
+    background-color: #0d5b85;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+@media only screen and (max-width: 800px) {
+
+
+    .logOut {
+        font-size: 14px;
+        font-weight: lighter;
+    }
+
+    .userMenu {
+        font-size: 14px;
+    }
+
+    .currentPage {
+        font-size: 18px;
+        font-weight: lighter;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+}
+
+
+

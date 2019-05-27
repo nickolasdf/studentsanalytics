@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+}
+
+.modalWindow {
+    height: 70vh;
+    width: 85vw;
+    z-index: 5;
+    position: relative;
+    background-color: #f5f5f5;
+    border: 3px solid #d6d6d6;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.redactBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    height: 100%;
+    width: 100%;
+
+
+}
+
+.fieldBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.inputLabel {
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+}
+
+.doubleSection {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.inputItem {
+    height: 45px;
+    width: 320px;
+
+    padding: 0 20px;
+    border: 2px solid #0d5b85;
+    border-radius: 15px;
+    text-align: left;
+    outline: none;
+}
+
+.inputItem:hover {
+    background-color: #d9d9d9;
+}
+
+.inputItem:focus {
+    outline: none;
+}
+
+.buttonsSection button {
+    height: 34px;
+    width: 100px;
+    border: 2px solid #0d5b85;
+    border-radius: 15px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.buttonsSection button:active {
+    background-color: #0d5b85;
+    color: white;
+}
+
+.buttonsSection button:hover {
+    background-color: #d9d9d9;
+}
+
+
+.buttonsSection {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.closeButton {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #256589;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .closeButton {
+        padding-top: 40px;
+    }
+
+    .redactBlock {
+        height: fit-content;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .modalWindow {
+        top: 0;
+        border-radius: 0;
+
+        border: none;
+        background-color: #e8ecef;
+
+        height: 100vh;
+        width: 100vw;
+
+        overflow-y: auto;
+    }
+
+    .doubleSection {
+        flex-direction: column;
+    }
+
+    .fieldBlock {
+        margin-top: 20px;
+    }
+
+    .inputLabel {
+        font-size: 16px;
+    }
+
+
+    .buttonsSection {
+        margin-top: 1vh;
+    }
+
+}

@@ -1,0 +1,128 @@
+#btn-row {
+    direction: ltr;
+    margin-top: 3vw;
+}
+
+#BtnGroup {
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    padding-right: 250px;
+}
+
+#Amount {
+    color: #0d5b85;
+}
+
+#Arrow {
+    font-size: 30px;
+    margin-bottom: 4px;
+}
+
+#dropdown {
+    background-color: white;
+    font-size: 22px;
+    white-space: nowrap;
+    border-radius: 15px;
+    border: 2px solid #0d5b85;
+    box-shadow: none;
+}
+
+#dropdown:hover {
+    background-color: #d9d9d9;
+}
+
+#dropdownFocus {
+    color: white;
+    transition: 0.3s;
+    background-color: #0d5b85;
+    font-size: 22px;
+    white-space: nowrap;
+    border-radius: 15px;
+    border: 2px solid #0d5b85;
+    box-shadow: none;
+}
+
+#AmountFocus {
+    color: white;
+}
+
+#dropItem {
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+#dropItem:active {
+    outline: none;
+}
+
+#dropItem:hover {
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#dropMenu {
+    background-color: #0d5b85;
+    text-align: center;
+}
+
+#Disabled {
+    background-color: transparent;
+    color: black;
+    border: none;
+}
+
+#buttonClick {
+    transition: 0.3s;
+    background-color: #0d5b85;
+    border-radius: 15px;
+    border: 2px solid #0d5b85;
+    color: white;
+    font-size: 18px;
+    box-shadow: none;
+}
+
+#buttons:focus {
+    box-shadow: none;
+}
+
+#buttons:hover {
+    background-color: #d9d9d9;
+    transition: 0.3s;
+}
+
+#buttons {
+    transition: 0.3s;
+    border: 2px solid #0d5b85;
+    border-radius: 15px;
+    color: steelblue;
+    background-color: white;
+    font-size: 18px;
+}
+
+
+@media only screen and (max-width: 945px) {
+    #Arrow {
+        transform: rotate(180deg);
+    }
+}
+
+@media only screen and (max-width: 945px) {
+    #BtnGroup {
+        display: flex;
+        margin-bottom: 10px;
+
+        justify-content: center;
+        padding-right: 0;
+    }
+
+    #btn-row {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+
+    }
+}
